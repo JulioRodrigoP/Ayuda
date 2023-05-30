@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*logo*/
+header {
+  position: static;
+  z-index: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50%;
+  max-height: 50%;
+  text-align: center;
+}
+
+/*botones*/
+
+#botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#botones button {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.texto {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*Reguistro y iniciar sesion*/
+
+.column {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.campo label {
+  margin-bottom: 5px;
+}
+/*Menu*/
+
+/* Ocultar el menú por defecto */
+.menu {
+  display: none;
+}
+
+/* Estilo del botón de menú */
+.menu-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo del menú desplegable */
+.menu-btn:focus + .menu,
+.menu:hover {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  background-color: #333;
+  padding: 0.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0.5rem 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*BOTON CON IMAGEN*/
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #646060;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  max-width: 400px;
+  width: 100%;
+}
+
+.image-btn img {
+  width: 180px;
+  height: 250px;
+  margin-bottom: 0.5rem;
+}
+
+/*boton con texto*/
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.text-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #646060;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-btn h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-btn p {
+  font-size: 1rem;
+}
+/*informacion del usuario*/
+
+.infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.name,
+.description {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.name h2,
+.description h2 {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.name p,
+.description p {
+  font-size: 1rem;
+}
+
+/*administrador*/
+
+table {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/**/
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li span {
+  margin-right: 10px;
+}
+
+li button {
+  background-color: #008080;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #005050;
+}
+
+.edit-button {
+  background-color: #008080;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #005050;
+}
+
+/*tabla*/
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  /* Ajustar tamaño de tabla y celdas */
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* Estilos para mostrar tabla en 2 columnas */
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Ajustar ancho de celdas en 2 columnas */
+  td {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  /* Ocultar encabezado de tabla en dispositivos móviles */
+  thead {
+    display: none;
+  }
+
+  /* Mostrar solo texto en celdas de tabla */
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Estilos para la línea */
+.linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  margin: 10px 0;
+}
+
+.izquierda {
+  text-align: left;
+  flex: 1;
+  margin-left: 10%;
+}
+
+.derecha {
+  text-align: right;
+  flex: 1;
+  margin-right: 20%;
+}
+
+.button-verde-petroleo {
+  background-color: #2e8b57;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
